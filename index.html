@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MusicPlayer</title>
+</head>
+<body>
+    <main>
+        <section class="music_player">
+            <div class="info">
+                <img src="" alt="" id="songCover">
+                <h3 id="songTitle">Prueba</h3>
+                <p id="songAuthor">Autor</p>
+            </div>
+            <div class="time_control">
+                <div class="time">
+                    <p class="minute" id="currentDuration">00:00</p>
+                    <p class="minute" id="totalDuration">00:00</p>
+                </div>
+                <input type="range"  min="0" max="100" value="0" oninput="AnimateMusicBar()" onmousedown="setTime()" class="bar" id="bar">
+            </div>
+            <div class="song_control">
+                <div class="control change_song change_song--back" id="prevSong">
+                    <img src="imgs/next_song.png" alt="">
+                </div>
+                <div class="control pause" id="stop/play">
+                    <img src="imgs/play.png" alt="" id="imgPlayStop">
+                </div>
+                <div class="control change_song">
+                    <img src="imgs/next_song.png" alt="" id="nextSong">
+                </div>
+            </div>
+        </section>
+        <audio src="" id="songAudio" preload="metadata"></audio>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

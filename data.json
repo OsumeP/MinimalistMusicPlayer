@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Ephemeral",
+        "author": "Geoxor",
+        "cover": "./imgs/ephemeral.png",
+        "song": "./songs/Ephemeral.mp3",
+        "id": 0
+    },
+    {
+        "name": "Virtual",
+        "author": "Geoxor",
+        "cover": "./imgs/virtual.png",
+        "song": "./songs/Virtual.mp3",
+        "id": 1
+    }
+]

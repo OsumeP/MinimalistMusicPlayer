@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+main{
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 44%, rgba(5,100,181,1) 64%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_player{
+    width: 80%;
+    height: 75%;
+    max-width: 285px;
+    padding: 5%;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    background-color: #212936;
+    border-radius: 20px;
+}
+
+/*Info of the song*/
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Inter';
+}
+
+.info > img{
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.info > p{
+    color: #58616f;
+    font-size: 0.75rem;
+}
+
+/*Time control*/
+
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-size: 0.625rem;
+    color: #58616f;
+}
+
+.bar{
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(0, 126, 194), rgb(0, 126, 194));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+.bar::-webkit-slider-runnable-track{
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.bar::-webkit-slider-thumb{
+    width: 1px;
+    height: 1px;
+    appearance: none;
+}
+
+/*Control song*/
+.song_control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control{
+    width: 15%;
+    margin: 5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.control > img {
+    width: 40%;
+}
+
+.pause{
+    width: 20%;
+    height: 41px;
+    padding: 12px;
+    background-color: rgb(0, 126, 194);
+}
+
+.change_song--back > img{
+    transform: scaleX(-1);
+}
